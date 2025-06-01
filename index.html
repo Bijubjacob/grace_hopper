@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+            }</style>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grace Hopper: Pioneer in Computing</title>
 </head>
-<body>
-    <header>
-        <h1>Grace Hopper</h1>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg" width="300" height="400" alt="Grace Hopper" >
-        </header>
+
+<body id="top">
+    <!-- Navigation -->
         <nav>
             <ul>
-                <li><a href="#biography">Biography</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#Career">Career Timeline</a></li>
+                <li><a href="#contributions">Contributions</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-        <section>
-            <h2>About Grace Hopper</h2>
-            <p>Grace Hopper (1906-1992) was a computer scientist and U.S. Navy rear admiral. She pioneered the development of COBOL and popularized the term "debugging."</p>
-        </section>
-        <section id="biography">
-            <h2>Biography</h2>
+        </nav>    
+        <!-- Header -->
+    <header style="text-align:center; margin:1rem auto">
+        <h1 style="font-size: 2.5rem; color: #1a73e8">Grace Hopper</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg" width="300" height="400" alt="Grace Hopper" >
+    </header>
+    <!-- Main Content -->
+        <main>
+            <article>
+                <section>
+                    <h2>About Grace Hopper</h2>
+                    <p>Grace Hopper (1906-1992) was a computer scientist and U.S. Navy rear admiral. She pioneered the development of COBOL and popularized the term "debugging."</p>
+                </section>
+        <section id="contributions">
+            <h2>Contributions</h2>
             <p>Grace Hopper was born on December 9, 1906, in New York City. She earned a Ph.D. in mathematics from Yale University and joined the U.S. Navy Reserve during World War II.</p>
             <p>She worked on the Mark I computer at Harvard University and later developed the first compiler for a programming language, A-0.</p>
         </section>
-        <section id="achievements">
-            <h2>Achievements</h2>
+        <section id="timeline">
+            <h2>Timeline</h2>
             <ul>
                 <li>Developed the first compiler for a programming language.</li>
                 <li>Popularized machine-independent programming languages.</li>
@@ -43,7 +59,13 @@
                 <tr><td>1986</td><td>Retired from the U.S. Navy as a rear admiral.</td></tr>
             </table>
         </section>
+        <section>
         <p>Learn more about <a href="https://en.wikipedia.org/wiki/COBOL">COBOL</a>, the language she helped create.</p>
+        </section>
+        </article>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions or comments, please fill out the form below:</p>
         <form action="/submit" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br>
@@ -53,6 +75,10 @@
             <textarea id="comments" name="comments" rows="4"></textarea><br>
             <button type="submit">Submit</button>
         </form>
+        </section>
+        </main>
+    <!-- Add a home icon button that links back to the top of the page. -->
+    <a href="#top" class="home-button" title="Back to Top">🏠</a>
      <footer>           
         <p>&copy; 2023</p>
         </footer>
